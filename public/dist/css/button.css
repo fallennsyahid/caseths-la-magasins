@@ -1,0 +1,24 @@
+.add-con {
+    display: flex;
+    justify-content: end;
+}
+
+.add {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: -5rem;
+    margin-right: 1rem;
+    padding: 1.5rem;
+    border-radius: 50%;
+    font-size: 2rem;
+    color: #5a3e61;
+    background-color: #fd81ea;
+}
+
+.add:hover {
+    background-color: #fb5ae0;
+    transition: 0.5s ease;
+    color: #5a3e61;
+}

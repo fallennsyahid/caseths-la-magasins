@@ -1,0 +1,71 @@
+/* General styling */
+.body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #fdf2f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0; */
+}
+
+/* Table container */
+.table-container-show {
+    width: 80%;
+    max-width: 600px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid #f9c0c9;
+}
+
+/* Table styling */
+.product-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.product-table thead {
+    background-color: #fce8ef;
+}
+
+.product-table th,
+.product-table td {
+    padding: 15px;
+    font-size: 16px;
+    border-bottom: 1px solid #f9c0c9;
+}
+
+.product-table th {
+    font-weight: 600;
+    color: #c25a7c;
+}
+
+.product-table td {
+    color: #6e1d44;
+}
+
+/* Table row hover effect */
+.product-table tbody tr:hover {
+    background-color: #fce8ef;
+    transition: background-color 0.3s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .table-container-show {
+        padding: 15px;
+    }
+
+    .product-table th,
+    .product-table td {
+        font-size: 14px;
+        padding: 10px;
+    }
+}

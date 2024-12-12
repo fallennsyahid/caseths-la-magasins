@@ -1,0 +1,183 @@
+/* Gaya dasar untuk halaman dan body */
+.body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    padding: 1rem;
+}
+
+/* Container untuk form */
+.form-container {
+    max-width: 35rem; /* Lebar maksimal sedikit lebih kecil */
+    margin: 1.5rem auto;
+    background-color: #fffafc;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+/* Gaya untuk form */
+h2 {
+    text-align: center;
+    color: #b089a7;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.coquette-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #9a7aa0;
+}
+
+.coquette-form label[for="category"] {
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #9a7aa0;
+}
+
+.coquette-form input,
+.coquette-form select,
+.coquette-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 0.125rem solid #f1cce7;
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    background-color: #ffe7f3;
+    color: #5a3e61;
+    box-sizing: border-box;
+}
+
+.coquette-form input[type="file"] {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 0.3rem;
+    border: 0.125rem solid #f1cce7;
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    background-color: #ffe7f3;
+    color: #5a3e61;
+    box-sizing: border-box;
+}
+
+.coquette-form input[type="number"]::-webkit-outer-spin-button,
+.coquette-form input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.coquette-form select {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 0.125rem solid #f1cce7;
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    background-color: #ffe7f3;
+    color: #5a3e61;
+    box-sizing: border-box;
+}
+
+.coquette-form input::placeholder {
+    color: #9a7aa0;
+}
+
+.coquette-form input:focus {
+    outline: none;
+    border-color: #b089a7;
+    background-color: #f8e1f4;
+}
+
+/* Gaya untuk tombol */
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.75rem; /* Jarak antar tombol lebih kecil */
+}
+
+.coquette-form .btn-submit {
+    background-color: #f3d3e3;
+    color: #5a3e61;
+    border: none;
+    padding: 0.625rem 1.25rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 0.875rem; /* Ukuran font tombol lebih kecil */
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.coquette-form .btn-submit:hover {
+    background-color: #f8e1f4;
+}
+
+.sub-btn {
+    background-color: #f8e1f4;
+    color: #5a3e61;
+    border: none;
+    padding: 0.625rem 1.25rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 0.875rem; /* Ukuran font tombol lebih kecil */
+    transition: background-color 0.3s ease;
+}
+
+.delete-btn {
+    background-color: #f8e1f4;
+    color: #5a3e61;
+    border: none;
+    padding: 0.625rem 1.25rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 0.875rem; /* Ukuran font tombol lebih kecil */
+    transition: background-color 0.3s ease;
+}
+
+.sub-btn:nth-child(even) {
+    background-color: #f3d3e3;
+    color: #5a3e61;
+    border: none;
+    padding: 0.625rem 1.25rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 0.875rem; /* Ukuran font tombol lebih kecil */
+    transition: background-color 0.3s ease;
+}
+
+.coquette-form .btn-reset {
+    background-color: #f3d3e3;
+    color: #5a3e61;
+    border: none;
+    padding: 0.625rem 1.25rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 0.875rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.coquette-form .btn-reset:hover {
+    background-color: #f4edf7;
+}
+
+/* Responsif untuk layar kecil */
+@media screen and (max-width: 600px) {
+    .form-container {
+        padding: 1rem;
+    }
+
+    .coquette-form input {
+        font-size: 0.75rem; /* Ukuran lebih kecil di layar kecil */
+    }
+
+    .form-buttons {
+        flex-direction: column;
+    }
+
+    .form-buttons button {
+        width: 100%;
+    }
+}

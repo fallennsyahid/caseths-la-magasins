@@ -1,0 +1,7 @@
+:root {
+    --sidebar: #987070;
+}
+
+.bg-sidebar {
+    background-color: var(--sidebar);
+}
