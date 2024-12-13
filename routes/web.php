@@ -25,14 +25,6 @@ Route::get('/admin/index', function () {
     return view('admin/index');
 });
 
-// Route::get('/admin/product/create', function () {
-//     return view('admin/product/create');
-// });
-
-// Route::get('/admin/index', function () {
-//     return view('admin/index');
-// })->middleware(['auth', 'verified'])->name('admin/index');
-
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
